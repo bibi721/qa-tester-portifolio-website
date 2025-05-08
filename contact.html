@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Professional Manual QA Tester for inquiries">
+  <meta name="keywords" content="QA Tester, Contact, Manual Testing">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Contact | QA Tester Portfolio">
+  <meta property="og:description" content="Get in touch with a Manual QA Tester.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/contact">
+  <title>Contact | QA Tester Portfolio</title>
+  <!-- Same schema, styles, and fonts as index.html -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Manual QA Tester",
+    "url": "https://yourdomain.com",
+    "sameAs": [
+      "https://linkedin.com/in/yourprofile",
+      "https://github.com/yourprofile"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+  <!-- Same nav as index.html -->
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <h1>QA Portfolio</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle light/dark theme">Dark Theme</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main role="main">
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <form id="contact-form" action="/submit" method="POST" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Same footer as index.html -->
+  <footer role="contentinfo">
+    <p>© 2025 QA Tester Portfolio. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
