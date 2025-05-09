@@ -3,90 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume of a Professional Manual QA Tester">
-  <meta name="keywords" content="QA Tester, Resume, Manual Testing">
+  <meta name="description" content="Professional Resume of a Manual QA Tester - Skills, Experience, and Achievements">
+  <meta name="keywords" content="QA Tester Resume, Manual Testing, Software Testing, Professional Portfolio">
   <meta name="author" content="Your Name">
-  <meta property="og:title" content="Resume | QA Tester Portfolio">
-  <meta property="og:description" content="View my professional QA Tester resume.">
+  <meta property="og:title" content="QA Tester Resume">
+  <meta property="og:description" content="Explore my professional resume as a Manual QA Tester, showcasing skills and achievements.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourdomain.com/resume">
-  <title>Resume | QA Tester Portfolio</title>
-  <!-- Same schema, styles, and fonts as index.html -->
+  <title>Resume - QA Tester Portfolio</title>
+  <!-- Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Your Name",
     "jobTitle": "Manual QA Tester",
-    "url": "https://yourdomain.com",
+    "url": "https://yourdomain.com/resume",
     "sameAs": [
       "https://linkedin.com/in/yourprofile",
       "https://github.com/yourprofile"
     ]
   }
   </script>
+  <!-- Styles and Fonts -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
-  <!-- Same nav as index.html -->
-  <header role="banner">
-    <nav class="navbar" aria-label="Main navigation">
-      <div class="logo">
-        <h1>QA Portfolio</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="resume.html" aria-current="page">Resume</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-      </ul>
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
-      <button class="theme-toggle" aria-label="Toggle light/dark theme">Dark Theme</button>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main role="main">
-    <section class="resume-section" aria-labelledby="resume-heading">
-      <h2 id="resume-heading">My Resume</h2>
-      <a href="assets/resume.pdf" download class="cta-button">Download Resume</a>
-      <div class="resume-content">
-        <h3>Skills</h3>
-        <ul>
-          <li>Manual Testing (Functional, Regression, Smoke)</li>
-          <li>Test Case Design & Execution</li>
-          <li>Bug Tracking (JIRA, Bugzilla)</li>
-          <li>Agile & Scrum Methodologies</li>
+  <div class="page-container">
+    <!-- Navigation -->
+    <header role="banner">
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">
+          <h1>QA Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="resume.html" aria-current="page">Resume</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#connect">Connect</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
-        <h3>Experience</h3>
-        <article>
-          <h4>QA Tester | TechCorp</h4>
-          <p>Jan 2022 - Present</p>
-          <ul>
-            <li>Conducted manual testing for web and mobile applications.</li>
-            <li>Reduced bug leakage by 30% through rigorous testing.</li>
-          </ul>
-        </article>
-        <h3>Education</h3>
-        <p>B.Sc. in Computer Science | University XYZ | 2018 - 2021</p>
-      </div>
-    </section>
-  </main>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </header>
 
-  <!-- Same footer as index.html -->
-  <footer role="contentinfo">
-    <p>© 2025 QA Tester Portfolio. All rights reserved.</p>
-    <ul class="social-links">
-      <li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-    </ul>
-  </footer>
+    <!-- Main Content -->
+    <main role="main" class="content">
+      <!-- Resume Introduction -->
+      <section id="resume-intro" class="resume-intro" aria-labelledby="resume-intro-heading">
+        <h2 id="resume-intro-heading">My Professional Resume</h2>
+        <p class="intro-text">As a dedicated Manual QA Tester, I deliver flawless software through rigorous testing and a passion for quality. Discover my skills, achievements, and client success stories to see how I can elevate your project.</p>
+        <a href="assets/resume.pdf" download class="cta-button primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="resume-section" aria-labelledby="skills-heading">
+        <h3 id="skills-heading">Core Skills</h3>
+        <div class="skills-container">
+          <div class="skill-card">
+            <h4>Manual Testing</h4>
+            <div class="progress-bar">
+              <div class="progress" data-progress="90"></div>
+            </div>
+            <p>Expert in functional, regression, and smoke testing.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Bug Tracking</h4>
+            <div class="progress-bar">
+              <div class="progress" data-progress="85"></div>
+            </div>
+            <p>Proficient in JIRA and Bugzilla for defect management.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Agile Methodologies</h4>
+            <div class="progress-bar">
+              <div class="progress" data-progress="80"></div>
+            </div>
+            <p>Experienced in Scrum and Kanban workflows.</p>
+          </div>
+          <div class="skill-card">
+            <h4>Mobile Testing</h4>
+            <div class="progress-bar">
+              <div class="progress" data-progress="75"></div>
+            </div>
+            <p>Skilled in iOS and Android compatibility testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="resume-section" aria-labelledby="experience-heading">
+        <h3 id="experience-heading">Professional Experience</h3>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <h4>QA Tester | TechCorp</h4>
+              <p class="date">Jan 2022 - Present</p>
+              <ul>
+                <li>Conducted manual testing for web and mobile apps, identifying 50+ critical bugs.</li>
+                <li>Reduced bug leakage by 30% through rigorous regression testing.</li>
+                <li>Collaborated in Agile sprints for timely releases.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <h4>Junior QA Analyst | SoftPeak Solutions</h4>
+              <p class="date">Jun 2020 - Dec 2021</p>
+              <ul>
+                <li>Developed test cases for e-commerce platforms, improving checkout reliability by 20%.</li>
+                <li>Performed usability testing, reducing user issues by 35%.</li>
+                <li>Documented defects in Bugzilla, streamlining resolutions.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="experience-card">
+              <h4>QA Intern | InnovateTech</h4>
+              <p class="date">Jan 2020 - May 2020</p>
+              <ul>
+                <li>Assisted in smoke testing for web applications, ensuring stable builds.</li>
+                <li>Contributed to test plan creation, enhancing efficiency.</li>
+                <li>Participated in Agile stand-ups, learning workflows.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="resume-section" aria-labelledby="education-heading">
+        <h3 id="education-heading">Education</h3>
+        <div class="education-card">
+          <h4>B.Sc. in Computer Science</h4>
+          <p>University XYZ | 2018 - 2021</p>
+          <p>Graduated with honors, specializing in software development and testing.</p>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="resume-section" aria-labelledby="certifications-heading">
+        <h3 id="certifications-heading">Certifications</h3>
+        <div class="certifications-container">
+          <div class="certification-card">
+            <img src="assets/istqb-badge.png" alt="ISTQB Certified" class="trust-badge">
+            <h4>ISTQB Certified Tester - Foundation Level</h4>
+            <p>International Software Testing Qualifications Board | 2022</p>
+          </div>
+          <div class="certification-card">
+            <img src="assets/scrum-badge.png" alt="Agile Certified" class="trust-badge">
+            <h4>Agile Testing Certification</h4>
+            <p>Scrum Alliance | 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Projects Section -->
+      <section id="projects" class="resume-section" aria-labelledby="projects-heading">
+        <h3 id="projects-heading">Key Projects</h3>
+        <div class="projects-container">
+          <div class="project-card">
+            <h4>E-Commerce Platform Testing</h4>
+            <p>Identified 50+ critical bugs, improving checkout reliability by 25%.</p>
+            <a href="index.html#cases" class="cta-button secondary">View Case Study</a>
+          </div>
+          <div class="project-card">
+            <h4>Mobile App Usability Testing</h4>
+            <p>Reduced user-reported issues by 40% through compatibility testing.</p>
+            <a href="index.html#cases" class="cta-button secondary">View Case Study</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients Section -->
+      <section id="clients" class="resume-section" aria-labelledby="clients-heading">
+        <h3 id="clients-heading">Trusted by Clients</h3>
+        <div class="clients-container">
+          <img src="assets/clients/shoponline.png" alt="ShopOnline Inc." class="client-logo">
+          <img src="assets/clients/mobilefit.png" alt="MobileFit Co." class="client-logo">
+          <img src="assets/clients/techcorp.png" alt="TechCorp" class="client-logo">
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="resume-testimonials" class="resume-section" aria-labelledby="resume-testimonials-heading">
+        <h3 id="resume-testimonials-heading">What Clients Say</h3>
+        <div class="testimonials-container">
+          <article class="testimonial-card">
+            <p>"Their QA expertise saved our release by catching critical bugs early."</p>
+            <h4>John Doe, Project Manager</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>"A professional who ensures quality at every step. Highly recommended."</p>
+            <h4>Jane Smith, Developer</h4>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>© 2025 QA Tester Portfolio. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </footer>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

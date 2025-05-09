@@ -3,61 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional Manual QA Tester Portfolio - Contact, Resume, and Testimonials">
-  <meta name="keywords" content="QA Tester, Manual Testing, Software Testing, Portfolio">
+  <meta name="description" content="Professional Manual QA Tester Portfolio - Case Studies, Testimonials, and More">
+  <meta name="keywords" content="QA Tester, Manual Testing, Software Testing, Portfolio, Case Studies">
   <meta name="author" content="Your Name">
-  <title>QA Tester Portfolio | Home</title>
-  <!-- SEO: Open Graph and Twitter Card -->
   <meta property="og:title" content="QA Tester Portfolio">
-  <meta property="og:description" content="Explore my work as a Manual QA Tester.">
+  <meta property="og:description" content="Explore my work as a Manual QA Tester, including case studies and testimonials.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourdomain.com">
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <!-- Normalize and Styles -->
+  <title>QA Tester Portfolio</title>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Manual QA Tester",
+    "url": "https://yourdomain.com",
+    "sameAs": [
+      "https://linkedin.com/in/yourprofile",
+      "https://github.com/yourprofile"
+    ]
+  }
+  </script>
+  <!-- Styles and Fonts -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
-  <!-- Navigation -->
-  <header role="banner">
-    <nav class="navbar" aria-label="Main navigation">
-      <div class="logo">
-        <h1>QA Portfolio</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
+  <div class="page-container">
+    <!-- Navigation -->
+    <header role="banner">
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="logo">
+          <h1>QA Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#cases">Cases</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#connect">Connect</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main" class="content">
+      <!-- Hero Section -->
+      <section id="home" class="hero" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <h2 id="hero-heading">Manual QA Tester</h2>
+          <p>Ensuring quality software through meticulous testing and expertise.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="cta-button primary">Get in Touch</a>
+            <a href="#cases" class="cta-button secondary">View Case Studies</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cases Section -->
+      <section id="cases" class="cases-section" aria-labelledby="cases-heading">
+        <h2 id="cases-heading">Case Studies</h2>
+        <div class="cases-container">
+          <article class="case-study">
+            <div class="case-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>E-Commerce Platform Testing</h3>
+            <p><strong>Client:</strong> ShopOnline Inc.</p>
+            <p><strong>Role:</strong> Manual QA Tester</p>
+            <p><strong>Description:</strong> Conducted functional and regression testing, identifying <span class="highlight">50+ critical bugs</span> in payment processing.</p>
+            <p><strong>Outcome:</strong> Improved checkout reliability by <span class="highlight">25%</span>.</p>
+            <span class="success-badge">Client Success</span>
+          </article>
+          <article class="case-study">
+            <div class="case-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile App Usability Testing</h3>
+            <p><strong>Client:</strong> MobileFit Co.</p>
+            <p><strong>Role:</strong> QA Analyst</p>
+            <p><strong>Description:</strong> Performed usability and compatibility testing across iOS and Android, ensuring seamless UX.</p>
+            <p><strong>Outcome:</strong> Reduced user-reported issues by <span class="highlight">40%</span>.</p>
+            <span class="success-badge">Client Success</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials Section (Carousel) -->
+      <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+        <h2 id="testimonials-heading">Client Testimonials</h2>
+        <div class="testimonials-carousel" role="region" aria-roledescription="carousel">
+          <button class="carousel-prev" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-container">
+            <article class="testimonial" aria-hidden="true">
+              <p>"Exceptional QA skills! Found critical bugs that saved our release."</p>
+              <h4>John Doe, Project Manager</h4>
+            </article>
+            <article class="testimonial" aria-hidden="true">
+              <p>"Highly professional and thorough. A pleasure to work with."</p>
+              <h4>Jane Smith, Developer</h4>
+            </article>
+            <article class="testimonial" aria-hidden="true">
+              <p>"Their attention to detail improved our product quality significantly."</p>
+              <h4>Alice Brown, Product Owner</h4>
+            </article>
+          </div>
+          <button class="carousel-next" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <p class="js-fallback" style="display: none; color: var(--error-color);">
+            JavaScript is disabled. Please enable JavaScript to view the testimonials carousel.
+          </p>
+        </div>
+      </section>
+
+      <!-- Connect Section -->
+      <aside id="connect" class="connect-section" aria-labelledby="connect-heading">
+        <h2 id="connect-heading">Connect with Me</h2>
+        <div class="connect-container">
+          <section class="social-media">
+            <h3>Social Media</h3>
+            <div class="connect-card">
+              <a href="https://linkedin.com/in/yourprofile" class="connect-link" aria-label="Visit my LinkedIn Profile">
+                <i class="fab fa-linkedin"></i>
+                <div class="connect-content">
+                  <span class="connect-title">LinkedIn</span>
+                  <span class="connect-subtitle">Connect professionally</span>
+                </div>
+              </a>
+              <a href="https://github.com/yourprofile" class="connect-link" aria-label="Visit my GitHub Profile">
+                <i class="fab fa-github"></i>
+                <div class="connect-content">
+                  <span class="connect-title">GitHub</span>
+                  <span class="connect-subtitle">Explore my projects</span>
+                </div>
+              </a>
+              <a href="https://twitter.com/yourprofile" class="connect-link" aria-label="Visit my Twitter Profile">
+                <i class="fab fa-twitter"></i>
+                <div class="connect-content">
+                  <span class="connect-title">Twitter</span>
+                  <span class="connect-subtitle">Follow my updates</span>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="blogs">
+            <h3>My Blogs</h3>
+            <div class="connect-card">
+              <a href="https://yourblog.com/post1" class="connect-link" aria-label="Read my blog on QA Testing Best Practices">
+                <i class="fas fa-blog"></i>
+                <div class="connect-content">
+                  <span class="connect-title">QA Testing Best Practices</span>
+                  <span class="connect-subtitle">Tips for effective testing</span>
+                </div>
+              </a>
+              <a href="https://yourblog.com/post2" class="connect-link" aria-label="Read my blog on Agile Testing">
+                <i class="fas fa-blog"></i>
+                <div class="connect-content">
+                  <span class="connect-title">Agile Testing: Tips and Tricks</span>
+                  <span class="connect-subtitle">Master agile workflows</span>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in Touch</h2>
+        <div class="contact-card">
+          <noscript>
+            <p style="color: var(--error-color); text-align: center;">
+              JavaScript is disabled. Please enable JavaScript to use the contact form or email me directly at <a href="mailto:your.email@example.com">your.email@example.com</a>.
+            </p>
+          </noscript>
+          <form id="contact-form" action="https://formspree.io/your-email" method="POST" novalidate>
+            <input type="hidden" name="_csrf" value="YOUR_CSRF_TOKEN">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name" aria-describedby="name-error">
+              </div>
+              <span id="name-error" class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="Your Email" aria-describedby="email-error">
+              </div>
+              <span id="email-error" class="error" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrapper">
+                <i class="fas fa-comment"></i>
+                <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Your Message" aria-describedby="message-error"></textarea>
+              </div>
+              <span id="message-error" class="error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="cta-button primary" disabled aria-disabled="true">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <p>© 2025 QA Tester Portfolio. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
       </ul>
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main role="main">
-    <section class="hero">
-      <h2>Welcome to My QA Portfolio</h2>
-      <p>Professional Manual QA Tester with a passion for quality software.</p>
-      <a href="contact.html" class="cta-button">Get in Touch</a>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <p>&copy; 2025 QA Tester Portfolio. All rights reserved.</p>
-    <ul class="social-links">
-      <li><a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-    </ul>
-  </footer>
+    </footer>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
