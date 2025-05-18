@@ -103,31 +103,42 @@
       <!-- Testimonials Section (Carousel) -->
       <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
         <h2 id="testimonials-heading">Client Testimonials</h2>
-        <div class="testimonials-carousel" role="region" aria-roledescription="carousel">
-          <button class="carousel-prev" aria-label="Previous testimonial">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <div class="carousel-container">
-            <article class="testimonial" aria-hidden="true">
-              <p>"Exceptional QA skills! Found critical bugs that saved our release."</p>
-              <h4>John Doe, Project Manager</h4>
-            </article>
-            <article class="testimonial" aria-hidden="true">
-              <p>"Highly professional and thorough. A pleasure to work with."</p>
-              <h4>Jane Smith, Developer</h4>
-            </article>
-            <article class="testimonial" aria-hidden="true">
-              <p>"Their attention to detail improved our product quality significantly."</p>
-              <h4>Alice Brown, Product Owner</h4>
-            </article>
-          </div>
-          <button class="carousel-next" aria-label="Next testimonial">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-          <p class="js-fallback" style="display: none; color: var(--error-color);">
-            JavaScript is disabled. Please enable JavaScript to view the testimonials carousel.
-          </p>
-        </div>
+          <div class="testimonial-carousel">
+    <button class="nav prev" aria-label="Previous testimonial">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+
+    <div class="carousel-track">
+      <div class="testimonial-card active">
+        <img src="https://i.pravatar.cc/150?img=32" alt="Anna">
+        <p>"Swedbank made everything so easy – smooth onboarding and great support!"</p>
+        <h4>Anna Svensson</h4>
+        <span>Product Manager</span>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Jonas">
+        <p>"Their team really cares about quality. Truly impressed!"</p>
+        <h4>Jonas Ek</h4>
+        <span>QA Engineer</span>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/150?img=65" alt="Lisa">
+        <p>"Great service, clear communication, and a product that delivers real value."</p>
+        <h4>Lisa Karlsson</h4>
+        <span>UX Designer</span>
+      </div>
+    </div>
+
+    <button class="nav next" aria-label="Next testimonial">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+  </div>
       </section>
 
       <!-- Connect Section -->

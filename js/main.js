@@ -297,70 +297,29 @@ document.addEventListener('DOMContentLoaded', () => {
   validateForm();
 
   // === Testimonial Carousel ===
-  /**
-   * Initializes testimonials carousel with navigation and accessibility.
-   */
-  const carousel = document.querySelector('.testimonials-carousel');
-  if (carousel) {
-    const container = carousel.querySelector('.carousel-container');
-    const testimonials = carousel.querySelectorAll('.testimonial');
-    const prevBtn = carousel.querySelector('.carousel-prev');
-    const nextBtn = carousel.querySelector('.carousel-next');
-    const fallback = carousel.querySelector('.js-fallback');
-    let currentIndex = 0;
+  
+  const track = document.querySelector('.carousel-track');
+const cards = document.querySelectorAll('.testimonial-card');
+const prevBtn = document.querySelector('.nav.prev');
+const nextBtn = document.querySelector('.nav.next');
+let currentIndex = 0;
 
-    if (!container || !testimonials.length || !prevBtn || !nextBtn) {
-      console.error('Carousel elements missing:', { container, testimonials, prevBtn, nextBtn });
-      if (fallback) fallback.style.display = 'block';
-      return;
-    }
+function updateCarousel() {
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  cards.forEach((card, index) => {
+    card.classList.toggle('active', index === currentIndex);
+  });
+}
 
-    const updateCarousel = () => {
-      testimonials.forEach((testimonial, index) => {
-        const isActive = index === currentIndex;
-        testimonial.classList.toggle('active', isActive);
-        testimonial.setAttribute('aria-hidden', !isActive);
-        testimonial.style.display = isActive ? 'block' : 'none';
-      });
-      container.style.transform = `translateX(-${currentIndex * 100}%)`;
-      console.log('Carousel updated:', {
-        currentIndex,
-        slideCount: testimonials.length
-      });
-    };
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  updateCarousel();
+});
 
-    prevBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-      console.log('Prev button clicked:', { currentIndex });
-      updateCarousel();
-    });
-
-    nextBtn.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % testimonials.length;
-      console.log('Next button clicked:', { currentIndex });
-      updateCarousel();
-    });
-
-    carousel.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') {
-        prevBtn.click();
-        prevBtn.focus();
-        console.log('Keyboard: ArrowLeft pressed');
-      } else if (e.key === 'ArrowRight') {
-        nextBtn.click();
-        nextBtn.focus();
-        console.log('Keyboard: ArrowRight pressed');
-      }
-    });
-
-    testimonials[0].classList.add('active');
-    testimonials[0].setAttribute('aria-hidden', 'false');
-    testimonials[0].style.display = 'block';
-    console.log('Carousel initialized:', { currentIndex, slideCount: testimonials.length });
-    updateCarousel();
-  } else {
-    console.warn('Testimonials carousel not found');
-  }
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  updateCarousel();
+});
 
   // === Smooth Scrolling ===
   /**
